@@ -14,4 +14,36 @@ public interface GameOption {
      */
     public abstract GameOption vs(GameOption gameOption);
 
+    /**
+     * The GameOption competes agains Rock.
+     *
+     * @param rock the rock to compete against.
+     * @return the winner of the game.
+     */
+    public abstract GameOption vs(Rock rock);
+
+    /**
+     * The GameOption competes against Paper.
+     *
+     * @param paper the paper to compete against.
+     * @return the winner of the game.
+     */
+    public abstract GameOption vs(Paper paper);
+
+    /**
+     * The GameOption competes against Scissors.
+     *
+     * @param scissors the scissors to compete against.
+     * @return the winner of the game.
+     */
+    public abstract GameOption vs(Scissors scissors);
+
+    /**
+     * The GameOption competes against Scissors.
+     *
+     * @param fire the fire to compete against.
+     * @return the winner of the game.
+     */
+    public abstract GameOption vs(Fire fire);
+
 }

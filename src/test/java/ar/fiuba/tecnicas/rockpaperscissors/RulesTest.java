@@ -6,10 +6,10 @@ import static junit.framework.Assert.assertEquals;
 
 public class RulesTest {
 
-    private Rock rock = new Rock();
-    private Paper paper = new Paper();
-    private Scissors scissors = new Scissors();
-    private Fire fire = new Fire();
+    private GameOption rock = new Rock();
+    private GameOption paper = new Paper();
+    private GameOption scissors = new Scissors();
+    private GameOption fire = new Fire();
 
     @Test
     public void rockBeatsScissors() {
