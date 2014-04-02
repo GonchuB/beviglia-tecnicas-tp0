@@ -3,18 +3,26 @@ package ar.fiuba.tecnicas.rockpaperscissors;
 /**
  * Created by gonchub on 3/17/14.
  */
-public class Paper {
+public class Paper implements GameOption {
 
-    public Object vs(Rock rock) {
+    public GameOption vs(GameOption gameOption) {
+        return gameOption.vs(this);
+    }
+
+    public GameOption vs(Rock rock) {
         return this;
     }
 
-    public Object vs(Scissors scissors) {
+    public GameOption vs(Scissors scissors) {
         return scissors;
     }
 
-    public Object vs(Paper paper) {
+    public GameOption vs(Paper paper) {
         return this;
+    }
+
+    public GameOption vs(Fire fire) {
+        return fire;
     }
 
 }

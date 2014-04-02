@@ -1,9 +1,9 @@
 package ar.fiuba.tecnicas.rockpaperscissors;
 
 /**
- * Created by gonchub on 3/17/14.
+ * Created by GonchuB on 01/04/2014.
  */
-public class Scissors implements GameOption {
+public class Fire implements GameOption {
 
     public GameOption vs(GameOption gameOption) {
         return gameOption.vs(this);
@@ -13,16 +13,16 @@ public class Scissors implements GameOption {
         return rock;
     }
 
+    public GameOption vs(Fire fire) {
+        return this;
+    }
+
     public GameOption vs(Scissors scissors) {
         return this;
     }
 
     public GameOption vs(Paper paper) {
         return this;
-    }
-
-    public GameOption vs(Fire fire) {
-        return fire;
     }
 
 }
